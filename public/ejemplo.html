@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Blog</title>
+	</head>
+	<body>
+		<h1>Usuarios</h1>
+		
+		{%if usersP != null %}
+		
+		  <!-- LAS LLAVES MAGICAS SON PARTE DE NUNJUCKS
+			EL SISTEMA DE TEMPLATES 
+			--->
+		  <h2>Nombre : {{usersP.first_name}} {{usersP.last_name}}</h2>
+			<p>Email : {{usersP.email}}</p>
+			<!--
+		  <p>FECHA:{{articuloPrincipal.fecha_creacion}}</p>
+		  <p>fecha con formato:{{articuloPrincipal.fecha}}</p>
+		  <p>Categorias:
+		  	{%for categoria in articuloPrincipal.categorias %}
+		  	   {{categoria.nombre}}&nbsp;
+		  	{%endfor%}
+		  </p>
+		  <p>Autor del articulo:{{articuloPrincipal.usuario.nombre}}</p>
+		  <p>Email del autor:{{articuloPrincipal.usuario.email}}</p>
+		  
+		  <h3>Comentarios:</h3>
+		  {%for comentario in articuloPrincipal.comentarios %}
+		    <p>{{comentario.comentario}}</p>
+		  {%endfor%}
+		  -->
+		{%else%}
+		
+		    <h2>NO EXISTE EL ARTICULO</h2>
+		    
+		{%endif%}
+		
+		
+		
+	</body>
+</html>
